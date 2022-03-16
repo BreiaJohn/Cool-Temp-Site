@@ -1,0 +1,85 @@
+//
+// About.scss
+//
+.about-tab {
+  .nav-item {
+    .nav-link {
+      padding: 5px 20px;
+      border-radius: 8px;
+      border: 2px solid;
+      border-color: transparent;
+      border-radius: 0;
+      color: $dark;
+      background: $white;
+      transition: all 0.5s ease;
+    }
+    .active {
+      color: $primary;
+      position: relative;
+      background: rgba($primary, 0.2);
+    }
+  }
+}
+
+.tab-content {
+  .about-social {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    background-color: $white;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: $box-shadow;
+  }
+  .contact-details {
+    i {
+      font-size: 32px;
+      color: $primary;
+    }
+  }
+  .mission-tab {
+    .mission-box {
+      padding: 13px 0;
+      .mission-icon {
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        font-size: 35px;
+        color: $primary;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid $border-color;
+      }
+    }
+  }
+  .about-title {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 2px;
+      background: $primary;
+      bottom: -18px;
+      transition: all 0.7s ease;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 2px;
+      background: $primary;
+      left: 0;
+      bottom: -8px;
+      transition: all 0.7s ease;
+    }
+    &:hover {
+      &::before {
+        width: 100px;
+      }
+      &::after {
+        width: 50px;
+      }
+    }
+  }
+}

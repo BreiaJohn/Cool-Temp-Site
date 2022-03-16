@@ -1,0 +1,75 @@
+//
+// variables.scss
+//
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&family=Poppins:wght@400;500;600&display=swap');
+
+//color
+$primary:    #f15825;
+$success:    #0fbd1b;
+$info:       #229bee;
+$warning:    #e7bc2f;
+$danger:     #f72b2b;
+$white:      #ffffff;
+$dark:       #0f105e;
+$light:      #f8f9fa;
+$muted:      #687179;
+$black:      #000000;
+$orange-50:  #fdeeeb;
+$purple:     #6643ff;
+$cyan:       #00e6e6;
+$blue:       #2762da;
+$pink:       #f85f89;
+
+// stylelint-disable
+$gray-100:    #f8f9fa;
+$gray-200:    #e9ecef;
+$gray-300:    #dee2e6;
+$gray-400:    #ced4da;
+$gray-500:    #adb5bd;
+$gray-600:    #6c757d;
+$gray-700:    #495057;
+$gray-800:    #343a40;
+$gray-900:    #0d0f15;
+$white-50:      rgba($white, .5);
+$black-50:      rgba($black, .5);
+
+$colors: (
+  "primary":    $primary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "dark":       $dark,
+  "cyan":       $cyan,
+  "blue":       $blue,
+  "muted":      $muted,
+  "purple":     $purple,
+  "pink":       $pink,
+  "white":      $white,
+  "light":      $light,
+  "black":      $black,
+  "orange-50":  $orange-50,
+);
+
+$theme-colors: (
+  "primary":    $primary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "white":      $white
+);
+
+// Body Background
+$body-bg:     #f5f5f5;
+$bg-gradient:   linear-gradient(to right, $primary, $dark);
+$box-shadow:    0px 1px 4px rgba($black, 0.16);
+$border-color:  rgba($black, 0.125);
+
+// font-family
+$font-family-base:        "Poppins", sans-serif;
+$font-family-secondary:   "Nunito Sans", sans-serif;

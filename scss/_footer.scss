@@ -1,0 +1,43 @@
+//
+// footer.scss
+//
+
+.bg-footer {
+  padding: 50px 0 40px 0;
+  background: darken($gray-800, 6%);
+}
+
+.footer-nav {
+  .footer-item {
+    padding: 8px 0;
+  }
+  .footer-link {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: $white-50;
+    transition: all 0.5s;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.footer-social {
+  .social-link {
+    font-size: 20px;
+    margin: 0 10px;
+    a {
+      color: $white-50;
+      transition: all 0.6s ease-in;
+    }
+    &:hover {
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+
+.footer-alt {
+  background: darken($gray-800, 8%);
+}

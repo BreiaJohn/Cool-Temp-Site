@@ -1,0 +1,45 @@
+/* Template Name: Ovato
+   File Description: Main Css file of the template
+*/
+
+/****************************************\
+
+01.variables
+02.general
+03.helper
+04.components
+05.menu
+06.home
+07.about
+08.feature
+09.portfolio
+10.process
+11.team
+12.client
+13.subscribe
+14.pricing
+15.blog
+16.contact
+17.footer
+18.loader
+
+*****************************************/
+
+@import "variables";
+@import "general";
+@import "helper";
+@import "components";
+@import "menu";
+@import "home";
+@import "about";
+@import "feature";
+@import "portfolio";
+@import "process";
+@import "team";
+@import "client";
+@import "subscribe";
+@import "pricing";
+@import "blog";
+@import "contact";
+@import "footer";
+@import "loader";

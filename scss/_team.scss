@@ -1,0 +1,45 @@
+//
+// team.scss
+//
+
+.team-box {
+  &::before {
+    content: "";
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+    border-bottom: 2px solid $primary;
+    opacity: 1;
+    transition: all 0.8s ease;
+  }
+  .team-social {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.8s ease;
+    .social-link {
+      li {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        background: $white;
+        border-radius: 5px;
+        margin: 0 8px;
+        text-align: center;
+      }
+    }
+  }
+  &:hover {
+    .team-social {
+      opacity: 1;
+    }
+    &::before {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+}

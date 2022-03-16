@@ -1,0 +1,41 @@
+//
+// process.scss
+//
+
+.process-box {
+  .process-no {
+    width: 30px;
+    height: 30px;
+    background: $white;
+    border: 1px solid $border-color;
+    line-height: 30px;
+    border-radius: 50%;
+    margin: 0 auto;
+    p {
+      line-height: 28px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .process-no {
+    &::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: rgba($muted, 0.1);
+      position: absolute;
+      top: 37%;
+      left: 0;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .process-no {
+    &::before {
+      top: 33%;
+    }
+  }
+}

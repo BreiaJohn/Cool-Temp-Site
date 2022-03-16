@@ -1,0 +1,27 @@
+//
+// subscribe.scss
+//
+
+.bg-subscribe {
+  background: url("../images/15.jpg") center;
+  background-size: cover;
+  background-attachment: fixed;
+  button {
+    &:focus {
+      color: $dark;
+    }
+  }
+}
+
+.subscribe-modal {
+  form {
+    .form-control {
+      border-radius: 30px 0 0 30px;
+      padding: 8px 20px;
+      font-size: 15px;
+    }
+    button {
+      border-radius: 0 30px 30px 0;
+    }
+  }
+}

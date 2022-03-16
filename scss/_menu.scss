@@ -1,0 +1,93 @@
+//
+// menu.scss
+//
+
+.navbar {
+  transition: all 0.5s ease;
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $dark;
+        font-size: 0.9rem;
+        background-color: transparent;
+        margin: 0 10px;
+        transition: all 0.3s ease;
+        font-family: $font-family-base;
+        &:hover,
+        &:active,
+        &.active {
+          color: $primary !important;
+        }
+      }
+    }
+  }
+  .navbar-toggler {
+    padding: 0px;
+    border: none;
+    font-size: 24px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .navbar-brand {
+    .logo-light {
+      display: inline-block;
+    }
+    .logo-dark {
+      display: none;
+    }
+  }
+}
+
+// Navbar-light
+.navbar-light {
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $dark !important;
+      }
+    }
+  }
+}
+
+//nav-sticy
+.nav-sticky {
+  &.navbar {
+    background: $white;
+    margin-top: 0px;
+    box-shadow: 0px 3px 10px 0px rgba(38, 107, 193, 0.08);
+  }
+  .navbar-brand {
+    .logo-dark {
+      display: inline-block;
+    }
+    .logo-light {
+      display: none;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $dark !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    background-color: $white;
+  }
+}

@@ -1,0 +1,65 @@
+//
+// pricing.scss
+//
+
+.pricing-tab {
+  .nav-item {
+    .active {
+      background: $primary !important;
+      transition: all 0.5s ease;
+    }
+    #monthly-tab {
+      border-radius: 30px 0 0 30px;
+      transition: all 0.5s ease;
+    }
+    #yearly-tab {
+      border-radius: 0 30px 30px 0;
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+.pricing-content {
+  .pricing-box,
+  .pricing-box-active {
+    transition: all 0.5s ease;
+    .pricing-badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      overflow: hidden;
+      height: 100px;
+      .badge {
+        float: right;
+        transform: rotate(45deg);
+        right: -67px;
+        top: 17px;
+        position: relative;
+        width: 200px;
+        margin: 0;
+        padding: 7px 10px;
+        font-weight: 500;
+      }
+    }
+    .price-list {
+      li {
+        margin: 18px 0;
+      }
+    }
+    .price-title {
+      border-color: $border-color;
+    }
+    .price {
+      border-bottom: 1px dashed $border-color;
+    }
+    &:hover {
+      border: 1px solid rgba($primary, 1);
+      box-shadow: $box-shadow;
+    }
+  }
+  .pricing-box-active {
+    border-color: rgba($primary, 1);
+    box-shadow: $box-shadow;
+  }
+}

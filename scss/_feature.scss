@@ -1,0 +1,30 @@
+//
+//features.scss
+//
+
+.feature-box {
+    padding: 30px 20px;
+    transition: all 0.5s ease;
+    background: $light;
+    .feature-icon {
+        opacity: 0.6;
+        transition: all 0.5s ease;
+    }
+    .bg-feature-icon {
+        opacity: 0;
+        transition: all 0.5s ease;
+        top: -44px;
+        right: -22px;
+    }
+    &:hover {
+        background: linear-gradient(45deg,$orange-50, transparent);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        transform: translateY(-10px);
+        .feature-icon {
+            opacity: 1;
+        }
+        .bg-feature-icon {
+            opacity: 0.08;
+        }
+    }
+}
